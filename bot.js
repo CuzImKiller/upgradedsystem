@@ -403,7 +403,7 @@ client.on('guildCreate', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("RED")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=400489866573512705&permissions=8&scope=bot')
+     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=526892015779315733&permissions=0&scope=bot')
   .setDescription(`**
   New Server Add System Bot ✅
 Server name: __${guild.name}__
@@ -417,7 +417,7 @@ client.on('guildDelete', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("GOLD")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=400489866573512705&permissions=8&scope=bot')
+     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=526892015779315733&permissions=0&scope=bot')
   .setDescription(`**
    Server kicked System Bot :cry:
 Server name: __${guild.name}__
@@ -615,7 +615,7 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
 const adminprefix = "-v";
-const devs = ['349616310734553088','335027415619338240'];
+const devs = ['523918572053987334','406857707832737803'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
